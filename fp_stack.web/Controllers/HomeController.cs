@@ -4,9 +4,11 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using fp_stack.web.Models;
 using fp_stack.core.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace fp_stack.web.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private Context _context;
